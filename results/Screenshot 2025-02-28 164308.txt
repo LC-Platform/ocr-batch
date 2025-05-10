@@ -1,5 +1,0 @@
-Enter the number of hours: 5 Enter the number of minutes: 4 Enter the number of seconds: 3
-The number of hours entered was 5 The number of minutes entered was 4 The number of seconds entered was 3
-The total number of minutes is 304 minutes. The total number of seconds is 18243 seconds.
-Try again (y/n)? n
-Goodbye!
