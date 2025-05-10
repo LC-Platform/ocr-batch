@@ -32,7 +32,10 @@ session.headers.update({
 })
 
 # prime cookies
-session.get(BASE_URL).raise_for_status()
+try:
+    session.get(BASE_URL, timeout=10).raise_for_status()
+except requests.HTTPError as e:
+    print(f"⚠️  Initial GET returned {e}. Continuing without cookies…")
 
 # ─── Paths ───────────────────────────────────────────────────────
 CWD        = os.getcwd()
